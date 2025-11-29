@@ -107,6 +107,7 @@ services:
       - frappe_network
     depends_on:
       - websocket
+      - backend  # <-- AJOUTEZ CETTE LIGNE
     deploy:
       restart_policy:
         condition: on-failure
